@@ -254,7 +254,7 @@ H5P.Flashcards = (function ($, Audio) {
     var $audioWrapper = $('<div>', {
       'class': 'h5p-flashcards-audio-wrapper'
     });
-    if (card.audio[0] !== undefined) {
+    if (card.audio !== undefined) {
       var audioDefaults = {
         files: card.audio,
         audioNotSupported: that.options.audioNotSupported
